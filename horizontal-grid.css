@@ -31,7 +31,11 @@
   border: 1px solid rgba(170,205,230,.38);
 }
 
-.hex-map .hex.world::before { border: 3px solid var(--type-color, rgba(170,205,230,.38)); }
+.hex-map .hex.world[data-type=D]::before { border: 3px solid var(--desert); }
+.hex-map .hex.world[data-type=E]::before { border: 3px solid var(--earth); }
+.hex-map .hex.world[data-type=W]::before { border: 3px solid var(--water); }
+.hex-map .hex.world[data-type=A]::before { border: 3px solid var(--asteroid); }
+.hex-map .hex.world[data-type=S]::before { border: 3px solid var(--station); }
 .hex-map .hex.anomaly::before { border: 2px solid #d08b4d; }
 .hex-map .hex.empty::before { border: 1px solid rgba(170,205,230,.3); }
 .hex-map .hex.selected::before { border-color: var(--accent) !important; }
